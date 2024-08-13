@@ -1,0 +1,108 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&family=Dosis:wght@500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+/* button */
+.add_new {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #b319f0;
+    background-image: linear-gradient(45deg, #322fff 0%, #e919f0  51%, #ff2f86  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .add_new:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .add_new:active {
+    transform: scale(0.95);
+  }
+
+  .parent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 3%;
+  }
+  .flip_card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: 2%;
+  }
+
+  .flip_card_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip_card:hover .flip_card_inner{
+    transform: rotateY(180deg);
+  }
+  .flip_card_front,
+  .flip_card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+  }
+  .flip_card_front{
+    background-image: linear-gradient(45deg,rgb(238, 237, 178),rgb(180, 176, 116));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .front_image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .flip_card_back{
+    background-image: linear-gradient(315deg, rgb(214, 214, 241), rgb(233, 187, 187));
+    color: rgb(42, 6, 110);
+    transform: rotateY(180deg);
+  }
+  .flip_card_back > p{
+    margin: 2%;
+  }
+
+.front_image{
+  margin-top: 2rem;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: solid rgb(42, 6, 110);
+}
+.name{
+  margin: 2%;
+}

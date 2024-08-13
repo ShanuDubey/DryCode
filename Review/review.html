@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DryCode</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.jpg">
+    <link rel="stylesheet" href="review.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+         <h4>Place your reviews here</h4>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              
+            </ul>
+            <button type="button" class="btn btn-primary add_new" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Add new
+            </button>
+
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Testimonial</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Image Url</label>
+          <input type="url" class="form-control" id="imageurl" aria-describedby="Image url">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Enter your Name</label>
+          <input type="text" class="form-control" id="nme" aria-describedby="Enter your Name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Enter your College or University</label>
+          <input type="email" class="form-control" id="college" aria-describedby="Enter your College or University">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Feedback</label>
+          <textarea style="width: 100%;" name="" id="feed-back" rows="6"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="addnew()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div class="parent">
+        <div class="flip_card">
+          <div class="flip_card_inner">
+            <div class="flip_card_front">
+              <div class="front_image">
+              <img src="https://img.freepik.com/premium-vector/avatar-portrait-young-caucasian-boy-man-round-frame-vector-cartoon-flat-illustration_551425-19.jpg?w=2000" alt="">
+              </div>
+              <div class="name"><h3>
+                <strong><center>Ankit Jaiswal</center></strong></h3>
+                <h4>
+                <center>Intern</center></h4>
+                <center>Naraina Vidya Peeth Engineering and Management Institute</center>
+              </div>
+            </div>
+            <div class="flip_card_back">
+            <p>"I thoroughly enjoyed my internship this summer and now have very valuable experience under my belt. I know this will help when looking for jobs and needing references. I was dreading it in the beginning, but now I am so happy it was required. As much as the curriculum changes, I hope that class remains constant."</p>
+          </div>
+          </div>
+        </div>
+
+        <div class="flip_card">
+          <div class="flip_card_inner">
+            <div class="flip_card_front">
+              <div class="front_image">
+              <img src="https://img.freepik.com/premium-vector/face-cute-girl-avatar-young-girl-portrait-vector-flat-illustration_192760-82.jpg?w=2000" alt="">
+              </div>
+              <div class="name"><h3>
+                <strong><center>Shraddha Dubey</center></strong></h3>
+                <h4>
+                <center>Intern</center></h4>
+                <center>Naraina Vidya Peeth Engineering and Management Institute</center>
+              </div>
+            </div>
+            <div class="flip_card_back">
+            <p>"The remote internship experience was highly positive, enabling effective collaboration and skill development despite the virtual setting. Regular communication and support from supervisors and coordinators ensured a smooth remote work environment. The flexibility of remote work allowed for a better work-life balance and increased productivity."</p>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>        
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="review.js"></script>
+</body>
+</html>
